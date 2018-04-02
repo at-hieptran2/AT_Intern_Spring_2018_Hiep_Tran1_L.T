@@ -7,15 +7,15 @@
   <body>
     <header class="page-header" id="header">
       <div class="container">
-        <div class="logo">
+        <div class="logo-header">
           <a href="index.html">
             <img src="images/logo.png" alt="image">
           </a>
         </div>
-        <div class="nav-wrap">
+        <nav class="nav-wrap">
           <div class="top-header">
-            <ul>
-              <li class="phone">
+            <ul class="top-tt">
+              <li class="tt-kh">
                 <ul>
                   <li class="icon">
                     <img src="images/icon1.png" alt="image">
@@ -26,7 +26,7 @@
                   </li>
                 </ul>
               </li>
-              <li class="customers">
+              <li class="tt-kh">
                 <ul>
                   <li class="icon">
                     <img src="images/icon2.png" alt="image">
@@ -39,30 +39,30 @@
               </li>
             </ul>
           </div>
-          <nav id="mainnav" class="mainnav">
+          <nav id="main-nav" class="main-nav">
             <ul class="menu">
-              <li><a href="index.html">HOME</a></li>
-              <li><a href="#">ABOUT HADATOUR</a></li>
-              <li><a href="#">TOUR</a></li>
-              <li><a href="#">HOTLE</a></li>
-              <li><a href="#">RENTAL VEHICLES</a></li>
-              <li><a href="#">AIR TICKET</a></li>
-              <li><a href="#">NEW</a></li>
-              <li><a href="#">CONTACT</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">About Hadatour</a></li>
+              <li><a href="#">Tour</a></li>
+              <li><a href="#">Hotle</a></li>
+              <li><a href="#">Rental Vehicles</a></li>
+              <li><a href="#">Air Ticket</a></li>
+              <li><a href="#">New</a></li>
+              <li><a href="#">Contact</a></li>
             </ul>
           </nav>
-        </div>
+        </nav>
       </div>
     </header>
 
-    <main class="page-content">
-      <section class="slider">
+    <main class="page-main">
+      <section class="banner-top">
         <img src="images/1.jpg" alt="image">
-        <div class="content-slider">
+        <div class="content-banner">
           <h2 class="title">tour du lịch phố cổ hội an</h2>
           <p>tham quan mua sắm cùng hướng dẫn viên chuyên nghiệp</p>
-          <button>xem tour</buttona>
-          <button>chi tiết tour</buttona>
+          <button class="xem-tour">xem tour</button>
+          <button class="ct-tour">chi tiết tour</button>
         </div>
       </section>
 
@@ -70,47 +70,47 @@
         <div class="container">
           <div class="title-destination">
             <h2 class="title">interesting destination</h2>
-            <button>view more ></button>
+            <a href="#">view more ></a>
           </div>
           <div class="content-destination">
-            <ul>
-              <li>
+            <ul class="list-tt-tour">
+              <li class="item">
                 <div class="img-destination">
                   <a href="#"><img src="images/2.jpg" alt="image"></a>
                 </div>
                 <div class="name-destination">
                   <h4 class="title">japan - china</h4>
-                  <p>Price: 5.350.000$</p>
+                  <p class="price-tour">Price: 5.350.000$</p>
                 </div>
               </li>
 
-              <li>
+              <li class="item">
                 <div class="img-destination">
                   <a href="#"><img src="images/3.jpg" alt="image"></a>
                 </div>
                 <div class="name-destination">
-                  <h4 class="title">Thailand - campuchia</h4p>
-                  <p>Price: 5.350.000$</p>
+                  <h4 class="title">Thailand - campuchia</h4>
+                  <p class="price-tour">Price: 5.350.000$</p>
                 </div>
               </li>
 
-              <li>
+              <li class="item">
                 <div class="img-destination">
                   <a href="#"><img src="images/4.jpg" alt="image"></a>
                 </div>
                 <div class="name-destination">
                   <h4 class="title">Korean</h4>
-                  <p>Price: 5.350.000$</p>
+                  <p class="price-tour">Price: 5.350.000$</p>
                 </div>
               </li>
 
-              <li>
+              <li class="item">
                 <div class="img-destination">
                   <a href="#"><img src="images/5.jpg" alt="image"></a>
                 </div>
                 <div class="name-destination">
                   <h4 class="title">Australia - Philippines</h4>
-                  <p>Price: 5.350.000$</p>
+                  <p class="price-tour">Price: 5.350.000$</p>
                 </div>
               </li>
             </ul>
@@ -120,14 +120,14 @@
 
       <section class="search-tour">
         <div class="container">
-          <div class="logo">
+          <div class="logo-search">
             <img src="images/logo.png" alt="images">
           </div>
           <div class="tabs-search">
             <form action="search-tour">
-              <input type="text" name="location" placeholder="Location">
-              <input type="text" name="length" placeholder="Length">
-              <input type="text" name="price" placeholder="Price">
+              <input name="location" placeholder="Location">
+              <input name="length" placeholder="Length">
+              <input name="price" placeholder="Price">
               <button><img src="images/icon11.png" alt="image">Search</button>
             </form>
           </div>
@@ -138,42 +138,42 @@
         <div class="container">
           <div class="gird-tour">
             <div class="title-tour">
-              <h4 class="title-list">Overseas tours</h4>
+              <h4 class="title">Overseas tours</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
             </div>
-            <div class="img-tour">
+            <div class="item-tour">
               <div class="img-tour">
                 <img src="images/tour1.jpg" alt="image">
-                <ul>
-                  <li><img src="images/icon3.png" alt="images"></li>
-                  <li>
-                    <h4 class="title"><a href="#">Tour Lao - Thailand</a></h4>
-                    <p>2 days 3 nights</p>
-                    <p>4.500.000 $</p>
+                <ul class="infor-item">
+                  <li class="icon-item"><img src="images/icon3.png" alt="images"></li>
+                  <li class="name-item">
+                    <p class="name-tour"><a href="#">Tour Lao - Thailand</a></p>
+                    <p class="day-tour">2 days 3 nights</p>
+                    <p class="price-tour">4.500.000 $</p>
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="img-tour">
+            <div class="item-tour">
               <div class="img-tour" style="background-image: url('images/tour2.jpg');">
-                <ul>
-                  <li><img src="images/icon3.png" alt="images"></li>
-                  <li>
-                    <h4 class="title"><a href="#">Tour Lao - Thailand</a></h4>
-                    <p>2 days 3 nights</p>
-                    <p>4.500.000 $</p>
+                <ul class="infor-item">
+                  <li class="icon-item"><img src="images/icon3.png" alt="images"></li>
+                  <li class="name-item">
+                    <p class="name-tour"><a href="#">Tour Lao - Thailand</a></p>
+                    <p class="day-tour">2 days 3 nights</p>
+                    <p class="price-tour">4.500.000 $</p>
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="img-tour">
+            <div class="item-tour">
               <div class="img-tour" style="background-image: url('images/tour3.jpg');">
-                <ul>
-                  <li><img src="images/icon3.png" alt="images"></li>
-                  <li>
-                    <h4 class="title"><a href="#">Tour Lao - Thailand</a></h4>
-                    <p>2 days 3 nights</p>
-                    <p>4.500.000 $</p>
+                <ul class="infor-item">
+                  <li class="icon-item"><img src="images/icon3.png" alt="images"></li>
+                  <li class="name-item">
+                    <p class="name-tour"><a href="#">Tour Lao - Thailand</a></p>
+                    <p class="day-tour">2 days 3 nights</p>
+                    <p class="price-tour">4.500.000 $</p>
                   </li>
                 </ul>
               </div>
@@ -185,119 +185,119 @@
 
           <div class="gird-tour">
             <div class="title-tour">
-              <h4 class="title-tour">domestic tours</h4>
+              <h4 class="title">domestic tours</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
             </div>
-            <div class="img-tour">
+            <div class="item-tour">
               <div class="img-tour">
                 <img src="images/tour4.jpg" alt="image">
-                <ul>
-                  <li><img src="images/icon3.png" alt="images"></li>
-                  <li>
-                    <h4 class="title"><a href="#">Tour Lao - Thailand</a></h4>
-                    <p>2 days 3 nights</p>
-                    <p>4.500.000 $</p>
+                <ul class="infor-item">
+                  <li class="icon-item"><img src="images/icon3.png" alt="images"></li>
+                  <li class="name-item">
+                    <p class="name-tour"><a href="#">Tour Lao - Thailand</a></p>
+                    <p class="day-tour">2 days 3 nights</p>
+                    <p class="price-tour">4.500.000 $</p>
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="img-tour">
+            <div class="item-tour">
               <div class="img-tour" style="background-image: url('images/tour5.jpg');">
-                <ul>
-                  <li><img src="images/icon3.png" alt="images"></li>
-                  <li>
-                    <h4 class="title"><a href="#">Tour Lao - Thailand</a></h4>
-                    <p>2 days 3 nights</p>
-                    <p>4.500.000 $</p>
+                <ul class="infor-item">
+                  <li class="icon-item"><img src="images/icon3.png" alt="images"></li>
+                  <li class="name-item">
+                    <p class="name-tour"><a href="#">Tour Lao - Thailand</a></p>
+                    <p class="day-tour">2 days 3 nights</p>
+                    <p class="price-tour">4.500.000 $</p>
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="img-tour">
+            <div class="item-tour">
               <div class="img-tour" style="background-image: url('images/tour6.jpg');">
-                <ul>
-                  <li><img src="images/icon3.png" alt="images"></li>
-                  <li>
-                    <h4 class="title"><a href="#">Tour Lao - Thailand</a></h4>
-                    <p>2 days 3 nights</p>
-                    <p>4.500.000 $</p>
+                <ul class="infor-item">
+                  <li class="icon-item"><img src="images/icon3.png" alt="images"></li>
+                  <li class="name-item">
+                    <p class="name-tour"><a href="#">Tour Lao - Thailand</a></p>
+                    <p class="day-tour">2 days 3 nights</p>
+                    <p class="price-tour">4.500.000 $</p>
                   </li>
                 </ul>
               </div>
             </div>
             <div class="orther-tour">
-                <a href="#">Orther Tour ></a>
-              </div>
+              <a href="#">Orther Tour ></a>
+            </div>
           </div>
 
           <div class="gird-tour gird-hotel">
             <div class="title-tour">
-              <h4 class="title-tour">Hotels</h4>
+              <h4 class="title">Hotels</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
             </div>
-            <div class="img-tour">
+            <div class="item-tour">
               <div class="img-tour">
                 <img src="images/hotel1.jpg" alt="image">
-                <ul>
-                  <li><img src="images/icon3.png" alt="images"></li>
-                  <li>
-                    <h4 class="title"><a href="#">Hotel Novotel</a></h4>
+                <ul class="infor-item">
+                  <li class="icon-item"><img src="images/icon3.png" alt="images"></li>
+                  <li class="name-item">
+                    <p class="name-tour"><a href="#">Hotel Novotel</a></p>
                     <img src="images/star.png" alt="image">
                   </li>
                 </ul>
               </div>
             </div>
 
-            <div class="img-tour">
+            <div class="item-tour">
               <div class="img-tour" style="background-image: url('images/hotel2.jpg');">
-                <ul>
-                  <li><img src="images/icon3.png" alt="images"></li>
-                  <li>
-                    <h4 class="title"><a href="#">Hotel Sea Phoenix</a></h4>
+                <ul class="infor-item">
+                  <li class="icon-item"><img src="images/icon3.png" alt="images"></li>
+                  <li class="name-item">
+                    <p class="name-tour"><a href="#">Hotel Novotel</a></p>
                     <img src="images/star.png" alt="image">
                   </li>
                 </ul>
               </div>
             </div>
             
-            <div class="img-tour">
+            <div class="item-tour">
               <div class="img-tour" style="background-image: url('images/hotel3.jpg');">
-                <ul>
-                  <li><img src="images/icon3.png" alt="images"></li>
-                  <li>
-                    <h4 class="title"><a href="#">Hotel A La Carte</a></h4>
+                <ul class="infor-item">
+                  <li class="icon-item"><img src="images/icon3.png" alt="images"></li>
+                  <li class="name-item">
+                    <p class="name-tour"><a href="#">Hotel Novotel</a></p>
                     <img src="images/star.png" alt="image">
                   </li>
                 </ul>
               </div>
             </div>
             <div class="orther-tour">
-                <a href="#">Orther Tour ></a>
-              </div>
+              <a href="#">Orther Tour ></a>
+            </div>
           </div>
       </section>
 
       <section class="support-online" style="background-image: url('images/background.jpg');">
         <div class="container">
           <h2 class="title">support online</h2>
-          <ul>
-            <li>
-              <p>book tour</p>
+          <ul class="list-support">
+            <li class="item">
+              <p class="title">book tour</p>
               <a href="#"><img src="images/icon4.png" alt="image"></a>
               <a href="#"><img src="images/icon5.png" alt="image"></a>
             </li>
-            <li>
-              <p>book hotel</p>
+            <li class="item">
+              <p class="title">book hotel</p>
               <a href="#"><img src="images/icon4.png" alt="image"></a>
               <a href="#"><img src="images/icon5.png" alt="image"></a>
             </li>
-            <li>
-              <p>book vehicle</p>
+            <li class="item">
+              <p class="title">book vehicle</p>
               <a href="#"><img src="images/icon4.png" alt="image"></a>
               <a href="#"><img src="images/icon5.png" alt="image"></a>
             </li>
-            <li>
-              <p>book air ticket</p>
+            <li class="item">
+              <p class="title">book air ticket</p>
               <a href="#"><img src="images/icon4.png" alt="image"></a>
               <a href="#"><img src="images/icon5.png" alt="image"></a>
             </li>
@@ -309,58 +309,58 @@
         <div class="container">
           <div class="title-activity">
             <h2 class="title">activity images</h2>
-            <button>view more ></button>
+            <a href="#">view more ></a>
           </div>
 
           <ul class="list-album">
-            <li>
+            <li class="item">
               <div class="album-img">
                 <img src="images/img1.jpg" alt="image">
                 <a href="#">Tour Australia - Group activities</a>
               </div>
               <div class="content-album">
-                <ul>
-                  <li><p>3 days 2 nights</p></li>
-                  <li><p>25/08/2015</p></li>
+                <ul class="tt-tour">
+                  <li class="time-tour"><p>3 days 2 nights</p></li>
+                  <li class="day-tour"><p>25/08/2015</p></li>
                 </ul>
               </div>
             </li>
 
-            <li>
+            <li class="item">
               <div class="album-img">
                 <img src="images/img2.jpg" alt="image">
                 <a href="#">Tour Australia - Group activities</a>
               </div>
               <div class="content-album">
-                <ul>
-                  <li><p>3 days 2 nights</p></li>
-                  <li><p>25/08/2015</p></li>
+                <ul class="tt-tour">
+                  <li class="time-tour"><p>3 days 2 nights</p></li>
+                  <li class="day-tour"><p>25/08/2015</p></li>
                 </ul>
               </div>
             </li>
 
-            <li>
+            <li class="item">
               <div class="album-img">
                 <img src="images/img3.jpg" alt="image">
                 <a href="#">Tour Australia - Group activities</a>
               </div>
               <div class="content-album">
-                <ul>
-                  <li><p>3 days 2 nights</p></li>
-                  <li><p>25/08/2015</p></li>
+                <ul class="tt-tour">
+                  <li class="time-tour"><p>3 days 2 nights</p></li>
+                  <li class="day-tour"><p>25/08/2015</p></li>
                 </ul>
               </div>
             </li>
             
-            <li>
+            <li class="item">
               <div class="album-img">
                 <img src="images/img4.jpg" alt="image">
                 <a href="#">Tour Australia - Group activities</a>
               </div>
               <div class="content-album">
-                <ul>
-                  <li><p>3 days 2 nights</p></li>
-                  <li><p>25/08/2015</p></li>
+                <ul class="tt-tour">
+                  <li class="time-tour"><p>3 days 2 nights</p></li>
+                  <li class="day-tour"><p>25/08/2015</p></li>
                 </ul>
               </div>
             </li>
@@ -371,14 +371,14 @@
 
     <footer class="page-footer">
       <div class="container">
-        <ul>
+        <ul class="list-footer">
           <li class="logo-footer">
             <img src="images/logo.png" alt="image">
           </li>
 
           <li class="infomation">
             <h4 class="title">infomation</h4>
-            <ul>
+            <ul class="list-infomation">
               <li><a href="#">About HadaTour</a></li>
               <li><a href="#">Contact Infomation </a></li>
               <li><a href="#">Terms of membership</a></li>
@@ -389,7 +389,7 @@
 
           <li class="social">
             <h4 class="title">social</h4>
-            <ul>
+            <ul class="list-social">
               <li><a href="#"><img src="images/icon6.png" alt="image"> Bacebook</a></li>
               <li><a href="#"><img src="images/icon7.png" alt="image"> Google+</a></li>
               <li><a href="#"><img src="images/icon8.png" alt="image"> Twitter</a></li>
@@ -397,7 +397,7 @@
             </ul>
           </li>
 
-          <li>
+          <li class="email-footer">
             <p>Enter Email to get news from HadaTour</p>
             <form action="mail-notifications">
               <input type="text" name="email" placeholder="Please enter email here">
@@ -406,14 +406,14 @@
           </li>
         </ul>
 
-        <div class="bottom">
+        <div class="bottom-footer">
           <div class="container">
-            <ul>
+            <ul class="list-bottom">
               <li class="copyright">
                 <p>© 2018 - Copyright belong to HadaTour</p>
               </li>
               <li class="webdesign">
-                <p>Design by <a href="#">	hadatour.com</a></p>
+                <p>Design by <a href="#">hadatour.com</a></p>
               </li>
             </ul>
           </div>
