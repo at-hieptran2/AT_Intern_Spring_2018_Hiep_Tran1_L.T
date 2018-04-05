@@ -1,7 +1,7 @@
 /* Reset
 -------------------------------------------------------------- */
 a {
-  color: #333;
+  color: #333333;
 }
 
 a:hover {
@@ -48,10 +48,10 @@ ol, ul {
 
 blockquote, q { 
 -webkit-hyphens: none;
-    -moz-hyphens: none;
+   -moz-hyphens: none;
     -ms-hyphens: none;
         hyphens: none;
-          quotes: none;
+         quotes: none;
 }
 
 figure {
@@ -86,7 +86,7 @@ textarea {
   max-width: 100%;
   vertical-align: baseline;
   -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
+     -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
 
@@ -133,7 +133,7 @@ input::-moz-focus-inner { /* Corrects inner padding and border displayed oddly i
 *:before,
 *:after {
   -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
+     -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
 
@@ -144,23 +144,23 @@ input::-moz-focus-inner { /* Corrects inner padding and border displayed oddly i
 *:after {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
-      box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
   font: 14px/22px "MyriadPro Regular", sans-serif;
   font-weight: 400;
   background-color: var(--background-color);		
-  color: #333;
+  color: #333333;
 }
 
 a {		
   text-decoration: none;
   -webkit-transition: all 0.3s ease-in-out;
      -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-     -o-transition: all 0.3s ease-in-out;
-      transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+       -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
 }
 
 a:hover,
@@ -170,9 +170,9 @@ a:focus {
   outline: 0;
   -webkit-transition: all 0.3s ease-in-out;
      -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-     -o-transition: all 0.3s ease-in-out;
-      transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+       -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
 }
 
 ul, ol {
@@ -231,9 +231,9 @@ input[type="submit"] {
   padding: 10px;
   /*letter-spacing: 2.8px;*/
   -webkit-transition: all 0.3s ease 0s;
-      -moz-transition: all 0.3s ease 0s;
+     -moz-transition: all 0.3s ease 0s;
       -ms-transition: all 0.3s ease 0s;
-        -o-transition: all 0.3s ease 0s;
+       -o-transition: all 0.3s ease 0s;
           transition: all 0.3s ease 0s;
 }
 
@@ -286,7 +286,7 @@ input[type="color"]:focus {
   border: 1px solid #0ec0ee;
   -webkit-box-shadow: none;
      -moz-box-shadow: none;
-      box-shadow: none;
+          box-shadow: none;
 }
 
 textarea {
@@ -303,17 +303,17 @@ textarea:-moz-placeholder,
 textarea::-moz-placeholder,
 input:-moz-placeholder,
 input::-moz-placeholder {		
-  color: #777;
+  color: #777777;
   opacity: 1;
 }
 
 input:-ms-input-placeholder {
-  color: #777;
+  color: #777777;
 }
 
 textarea::-webkit-input-placeholder,
 input::-webkit-input-placeholder {
-  color: #777;
+  color: #777777;
   opacity: 1;
 }
 
@@ -349,15 +349,5 @@ input[type="color"],
      -moz-box-shadow: none;
        -o-box-shadow: none;
           box-shadow: none;
-  color: #333;
-}
-
-.blog-single .entry p {
-  margin-bottom: 30px;
-}
-
-.container {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
+  color: #333333;
 }
