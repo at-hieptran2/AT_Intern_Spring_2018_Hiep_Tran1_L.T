@@ -1,5 +1,5 @@
 .container {
-  max-width: 1200px;
+  max-width: 1140px;
   width: 100%;
   margin: 0 auto;
 }
@@ -38,7 +38,7 @@
 }
 
 .page-title.feature-post {
-  padding:  0;
+  padding: 0;
 }
 
 .page-title.feature-post iframe {
@@ -290,6 +290,7 @@
   font-size: 18px;
   text-transform: uppercase;
   line-height: 30px;
+  font-weight: 600;
   color: #ffffff;
   margin-bottom: 20px; 
 }
@@ -396,7 +397,6 @@
 .search-logo {
   float: left;
   margin-right: 35px;
-  padding-top: 50px;
 }
 
 .search-group {
@@ -451,7 +451,7 @@
 }
 
 .search-group .tab-css-search input[name="location"] {
-  width: 480px;
+  width: 400px;
 }
 
 .search-group .tab-css-search input[name="length"],
@@ -466,9 +466,9 @@
   background-color: #0ec0ee;
   border-color: #0ec0ee;
   color: #ffffff;
-  padding: 0 40px;
+  padding: 0 35px;
   text-transform: none;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .search-group .tab-css-search .btn-search::beffore {
@@ -714,7 +714,7 @@
   text-transform: uppercase;
   font-weight: 600;
   color: #282828;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .footer-list .footer-item .infomation-list .infomation-item a {
