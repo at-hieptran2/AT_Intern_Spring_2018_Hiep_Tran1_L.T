@@ -154,31 +154,35 @@
 		transition: all 0.3s ease-in-out;
 } 
 
+#main-nav .main-menu .menu-item a:hover {
+	color: #ffa800;
+}
+
 #main-nav > ul > li.active {
 	position: relative;
 }
 
 #main-nav .menu .has-sub:hover:before,
-#main-nav > ul > li > a:hover,
-#main-nav > ul > li.active:hover:after,
-#main-nav > ul > li.active a:hover {
+#main-nav .main-menu .menu-item a:hover,
+#main-nav .main-menu .menu-item.active:hover:after,
+#main-nav .main-menu .menu-item.active a:hover {
 	color: #fa9601;
 }
 
-#main-nav > ul > li > a:hover {
+#main-nav .main-menu .menu-item a:hover {
 	color: #fa9601;
 }
 
-#main-nav > ul > li > a:hover:after,
-#main-nav > ul > li.active > a:after {
+#main-nav .main-menu .menu-item a:hover:after,
+#main-nav .main-menu .menu-item.active > a:after {
 	width: 100%;
 }
 
-.page-header #main-nav > ul > li > a {
+.page-header #main-nav .main-menu .menu-item a {
 	padding: 12px 0;
 } 
 
-.heapage-headerder.style-v1 #main-nav > ul > li > a {
+.heapage-headerder.style-v1 #main-nav .main-menu .menu-item a {
 	line-height: 100px;
 }
 
@@ -397,6 +401,7 @@ color: #ed9f24;
 /* title-section
 -------------------------------------------------------------- */
 .section-padding {
+	display: flex;
 	padding: 30px 0 50px;
 }
 
@@ -435,6 +440,10 @@ color: #ed9f24;
 	padding: 8px 15px;
 	border-radius: 5px;
 	background-color: #ffa800;
+	color: #fff;
+}
+
+.top-title a:hover {
 	color: #fff;
 }
 
@@ -658,6 +667,10 @@ color: #ed9f24;
 	font-weight: 600;
 }
 
+.section-gird-tour .infor-list .name-tour a:hover {
+	color: #ffa800;
+}
+
 .section-gird-tour .orther-tour {
 	position: relative;
 	text-align: right;
@@ -753,6 +766,10 @@ color: #ed9f24;
 	color: #fff;
 	font-size: 18px;
 	line-height: 24px;
+}
+
+.album-list .album-item .album-img a:hover {
+	color: #ffa800;
 }
 
 .album-list .album-item .album-img img {
@@ -873,6 +890,14 @@ color: #ed9f24;
 
 .footer-bottom ul li.bottom-webdesign {
 	float: right;
+}
+
+.bottom-list .bottom-webdesign a {
+	color: #30b549;
+}
+
+.bottom-list .bottom-webdesign a:hover {
+	color: #ffa800;
 }
 
 /* Parallax

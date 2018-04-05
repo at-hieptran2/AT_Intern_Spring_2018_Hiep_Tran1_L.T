@@ -2474,14 +2474,14 @@ zoom: 1;
 	color: #fff;
 }
 
-.tp-caption.button-slider {
+.tp-caption.button-slider a {
 	font-family: "UTM BryantLG",sans-serif;
 	text-transform: uppercase;
 	font-size: 14px;
 	font-weight: 600;
 	color: #fff;
 	border: 2px solid #fff;
-	padding: 6px 20px;
+	padding: 8px 20px;
 	border-radius: 5px;
 	-webkit-transition: all 0.3s ease-in-out;
        -moz-transition: all 0.3s ease-in-out;
@@ -2494,7 +2494,7 @@ zoom: 1;
 	color: #fff;
 }
 
-.tp-caption.button-slider:hover {
+.tp-caption.button-slider a:hover {
 	background-color: #0ec0ee;
 	border: 2px solid #0ec0ee;
 	-webkit-transition: all 0.3s ease-in-out;

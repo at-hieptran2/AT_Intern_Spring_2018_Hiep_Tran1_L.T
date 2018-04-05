@@ -1,5 +1,13 @@
 /* Reset
 -------------------------------------------------------------- */
+a {
+	color: #333;
+}
+
+a:hover {
+	color: #ffa800;
+}
+
 :root {
 	--background-color: #f5f6f6;
 }
@@ -346,4 +354,10 @@ input[type="color"],
 
 .blog-single .entry p {
 	margin-bottom: 30px;
+}
+
+.container {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
 }
