@@ -4,12 +4,12 @@
   <title>Day 2</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <link rel="stylesheet" type="text/css" href="stylesheets/revolution-slider.css">
+  <!-- <link rel="stylesheet" type="text/css" href="stylesheets/revolution-slider.css"> -->
   <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/font-myri.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/font-utm.css">
-  <link rel="stylesheet" type="text/css" href="stylesheets/font-awesome.min.css">
+  <!-- <link rel="stylesheet" type="text/css" href="stylesheets/font-awesome.min.css"> -->
 </head>
 <body>
   <div class="wrap-slider"> 
@@ -64,54 +64,21 @@
         </div>
       </div>
     </header>
-
-    <div class="tp-banner-container">
-      <div class="tp-banner" >
-        <ul>
-          <li data-transition="3dcurtain-horizontal" data-slotamount="7" data-masterspeed="1000" data-saveperformance="on">
-              <img src="images/slides/1.jpg" alt="slider-image">
-              <div class="overlay"></div>
-              <div class="tp-caption sfr title-slide box center color-white large" data-x="250" data-y="350" data-speed="1000" data-start="1500" data-easing="Power3.easeInOut">tour du lịch phố cổ hội an</div>
-              <div class="tp-caption sfb desc-slide center color-white" data-x="310" data-y="400" data-speed="1000" data-start="1000" data-easing="slideoverright">tham quan mua sắm cùng hướng dẫn viên chuyên nghiệp</div>
-              <div class="tp-caption sft button-slider start" data-x="450" data-y="450" data-speed="1200" data-start="1500" data-easing="slideovertop">
-                  <a href="#">Xem Tour</a>                          
-              </div>
-              <div class="tp-caption sft button-slider start v1" data-x="580" data-y="450" data-speed="1500" data-start="1500" data-easing="Power3.easeInOut">
-                  <a href="#">Chi Tiết</a>                          
-              </div>
-            </li>
-
-          <li data-transition="boxslide" data-slotamount="7" data-masterspeed="1000" data-saveperformance="on">
-              <img src="images/slides/1.jpg" alt="slider-image">
-              <div class="overlay"></div>
-              <div class="tp-caption sfr title-slide box center color-white large" data-x="250" data-y="350" data-speed="1000" data-start="1500" data-easing="Power3.easeInOut">tour du lịch phố cổ hội an</div>
-              <div class="tp-caption sfb desc-slide center color-white" data-x="310" data-y="400" data-speed="1000" data-start="1000" data-easing="slideoverright">tham quan mua sắm cùng hướng dẫn viên chuyên nghiệp</div>
-              <div class="tp-caption sft button-slider start" data-x="450" data-y="450" data-speed="1200" data-start="1500" data-easing="slideovertop">
-                  <a href="#">Xem Tour</a>                          
-              </div>
-              <div class="tp-caption sft button-slider start v1" data-x="580" data-y="450" data-speed="1500" data-start="1500" data-easing="Power3.easeInOut">
-                  <a href="#">Chi Tiết</a>                          
-              </div>
-          </li>
-
-          <li data-transition="parallaxtoright" data-slotamount="7" data-masterspeed="1000" data-saveperformance="on">
-              <img src="images/slides/1.jpg" alt="slider-image">
-              <div class="overlay"></div>
-              <div class="tp-caption sfr title-slide box center color-white large" data-x="250" data-y="350" data-speed="1000" data-start="1500" data-easing="Power3.easeInOut">tour du lịch phố cổ hội an</div>
-              <div class="tp-caption sfb desc-slide center color-white" data-x="310" data-y="400" data-speed="1000" data-start="1000" data-easing="slideoverright">tham quan mua sắm cùng hướng dẫn viên chuyên nghiệp</div>
-              <div class="tp-caption sft button-slider start" data-x="450" data-y="450" data-speed="1200" data-start="1500" data-easing="slideovertop">
-                  <a href="#">Xem Tour</a>                          
-              </div>
-              <div class="tp-caption sft button-slider start v1" data-x="580" data-y="450" data-speed="1500" data-start="1500" data-easing="Power3.easeInOut">
-                  <a href="#">Chi Tiết</a>                          
-              </div>
-          </li>
-      </ul>
-      </div>
     </div>
   </div>
 
   <main class="page-main">
+    <section class="section-banner">
+        <div class="banner-img">
+          <img src="images/1.jpg" alt="banner">
+          <div class="content-banner">
+            <h1 class="banner-title">tour du lịch phố cổ hội an</h1>
+            <p class="text-banner">tham quan mua sắm cùng hướng dẫn viên chuyên nghiệp</p>
+            <a href="" class="xem-tour">xem tour</a>
+            <a href="" class="infor-tour">Chi Tiết</a>
+          </div>
+        </div>
+      </section>
     <section class="section-padding section-destination">
       <div class="container">
         <div class="destination-top top-title">
@@ -489,7 +456,7 @@
     <div class="container">
       <ul class="footer-list">
         <li class="footer-logo footer-item">
-          <img src="images/logo.png" alt="image">
+          <a href="index.html"><img src="images/logo.png" alt="image"></a>
         </li>
 
         <li class="footer-infomation footer-item">
@@ -534,11 +501,5 @@
       </div>
     </div>
   </footer>
-
-  <script type="text/javascript" src="javascript/jquery.min.js"></script>
-  <script type="text/javascript" src="javascript/smoothscroll.js"></script>
-  <script type="text/javascript" src="javascript/jquery.themepunch.tools.min.js"></script>
-  <script type="text/javascript" src="javascript/jquery.themepunch.revolution.min.js"></script>
-  <script type="text/javascript" src="javascript/slider.js"></script>
 </body>
 </html>
