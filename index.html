@@ -4,12 +4,11 @@
   <title>Day 2</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <!-- <link rel="stylesheet" type="text/css" href="stylesheets/revolution-slider.css"> -->
-  <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/font-myri.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/font-utm.css">
-  <!-- <link rel="stylesheet" type="text/css" href="stylesheets/font-awesome.min.css"> -->
 </head>
 <body>
   <div class="wrap-slider"> 
@@ -48,7 +47,11 @@
               </li>
             </ul>
 
+
             <nav id="main-nav" class="main-nav">
+              <div class="btn-menu" onclick="myFunction()" class="dropbtn">
+                <span></span>
+              </div>
               <ul class="main-menu"> 
                 <li class="active menu-item"><a href="index.html">Home</a></li>
                 <li class="menu-item"><a href="#">About Hadatour</a></li> 
@@ -69,16 +72,17 @@
 
   <main class="page-main">
     <section class="section-banner">
-        <div class="banner-img">
-          <img src="images/1.jpg" alt="banner">
-          <div class="content-banner">
-            <h1 class="banner-title">tour du lịch phố cổ hội an</h1>
-            <p class="text-banner">tham quan mua sắm cùng hướng dẫn viên chuyên nghiệp</p>
-            <a href="" class="xem-tour">xem tour</a>
-            <a href="" class="infor-tour">Chi Tiết</a>
-          </div>
+      <div class="banner-img">
+        <img src="images/1.jpg" alt="banner">
+        <div class="content-banner">
+          <h1 class="banner-title">tour du lịch phố cổ hội an</h1>
+          <p class="text-banner">tham quan mua sắm cùng hướng dẫn viên chuyên nghiệp</p>
+          <a href="" class="xem-tour">xem tour</a>
+          <a href="" class="infor-tour">Chi Tiết</a>
         </div>
-      </section>
+      </div>
+    </section>
+
     <section class="section-padding section-destination">
       <div class="container">
         <div class="destination-top top-title">
@@ -157,8 +161,8 @@
 
             <section id="content1" class="tab-css-search">
               <form class="search-form tab-content">
-                <input type="text" name="location" placeholder="Location">
-                <input type="text" name="length" placeholder="Length">
+                <input type="text" name="location" placeholder="Name Tour">
+                <input type="text" name="length" placeholder="Time">
                 <input type="text" name="price" placeholder="Price">
                 <button class="btn-search" type="submit"><img src="images/icon11.png" alt="image">&nbsp;Search1</button>
               </form>
@@ -187,7 +191,9 @@
               </div>
               <div class="tour-content">
                 <div class="tour-img">
-                  <img src="images/tour1.jpg" alt="image">
+                  <div class="info-img">
+                    <img src="images/tour1.jpg" alt="image">
+                  </div>
                   <ul class="infor-list">
                     <li class="infor-icon-item">
                       <img src="images/icon3.png" alt="images">
@@ -203,7 +209,9 @@
               </div>
               <div class="tour-content">
                 <div class="tour-img">
-                  <img src="images/tour2.jpg" alt="image">
+                  <div class="info-img">
+                    <img src="images/tour2.jpg" alt="image">
+                  </div>
                   <ul class="infor-list">
                     <li class="infor-icon-item">
                       <img src="images/icon3.png" alt="images">
@@ -219,7 +227,9 @@
               </div>
               <div class="tour-content">
                 <div class="tour-img">
-                  <img src="images/tour3.jpg" alt="image">
+                  <div class="info-img">
+                    <img src="images/tour3.jpg" alt="image">
+                  </div>
                   <ul class="infor-list">
                     <li class="infor-icon-item">
                       <img src="images/icon3.png" alt="images">
@@ -247,7 +257,9 @@
               </div>
               <div class="tour-content">
                 <div class="tour-img">
-                  <img src="images/tour4.jpg" alt="image">
+                  <div class="info-img">
+                    <img src="images/tour4.jpg" alt="image">
+                  </div>
                   <ul class="infor-list">
                     <li class="infor-icon-item">
                       <img src="images/icon3.png" alt="images">
@@ -263,7 +275,9 @@
               </div>
               <div class="tour-content">
                 <div class="tour-img">
-                  <img src="images/tour5.jpg" alt="image">
+                  <div class="info-img">
+                    <img src="images/tour5.jpg" alt="image">
+                  </div>
                   <ul class="infor-list">
                     <li class="infor-icon-item">
                       <img src="images/icon3.png" alt="images">
@@ -279,7 +293,9 @@
               </div>
               <div class="tour-content">
                 <div class="tour-img">
-                  <img src="images/tour6.jpg" alt="image">
+                  <div class="info-img">
+                    <img src="images/tour6.jpg" alt="image">
+                  </div>
                   <ul class="infor-list">
                     <li class="infor-icon-item">
                       <img src="images/icon3.png" alt="images">
@@ -307,7 +323,9 @@
               </div>
               <div class="tour-content">
                 <div class="tour-img">
-                  <img src="images/hotel1.jpg" alt="image">
+                  <div class="info-img">
+                    <img src="images/hotel1.jpg" alt="image">
+                  </div>
                   <ul class="infor-list">
                     <li class="infor-icon-item">
                       <img src="images/icon3.png" alt="images">
@@ -322,7 +340,9 @@
   
               <div class="tour-content">
                 <div class="tour-img">
-                  <img src="images/hotel2.jpg" alt="image">
+                  <div class="info-img">
+                    <img src="images/hotel2.jpg" alt="image">
+                  </div>
                   <ul class="infor-list">
                     <li class="infor-icon-item">
                       <img src="images/icon3.png" alt="images">
@@ -337,7 +357,9 @@
               
               <div class="tour-content">
                 <div class="tour-img">
-                  <img src="images/hotel3.jpg" alt="image">
+                  <div class="info-img">
+                    <img src="images/hotel3.jpg" alt="image">
+                  </div>
                   <ul class="infor-list">
                     <li class="infor-icon-item">
                       <img src="images/icon3.png" alt="images">
@@ -365,23 +387,23 @@
           <ul class="support-list">
             <li class="support-item">
               <h4 class="support-title">book tour</h4>
-              <a href="#"><img src="images/icon4.png" alt="image"></a>
-              <a href="#"><img src="images/icon5.png" alt="image"></a>
+              <a href="#" class="phone-support"><img src="images/icon4.png" alt="image"></a>
+              <a href="#" class="skype-support"><img src="images/icon5.png" alt="image"></a>
             </li>
             <li class="support-item">
               <h4 class="support-title">book hotel</h4>
-              <a href="#"><img src="images/icon4.png" alt="image"></a>
-              <a href="#"><img src="images/icon5.png" alt="image"></a>
+              <a href="#" class="phone-support"><img src="images/icon4.png" alt="image"></a>
+              <a href="#" class="skype-support"><img src="images/icon5.png" alt="image"></a>
             </li>
             <li class="support-item">
               <h4 class="support-title">book vehicle</h4>
-              <a href="#"><img src="images/icon4.png" alt="image"></a>
-              <a href="#"><img src="images/icon5.png" alt="image"></a>
+              <a href="#" class="phone-support"><img src="images/icon4.png" alt="image"></a>
+              <a href="#" class="skype-support"><img src="images/icon5.png" alt="image"></a>
             </li>
             <li class="support-item">
               <h4 class="support-title">book air ticket</h4>
-              <a href="#"><img src="images/icon4.png" alt="image"></a>
-              <a href="#"><img src="images/icon5.png" alt="image"></a>
+              <a href="#" class="phone-support"><img src="images/icon4.png" alt="image"></a>
+              <a href="#" class="skype-support"><img src="images/icon5.png" alt="image"></a>
             </li>
           </ul>
         </div>
@@ -463,7 +485,7 @@
           <h4 class="footer-title">infomation</h4>
           <ul class="infomation-list">
             <li class="infomation-item"><a href="#">About HadaTour</a></li>
-            <li class="infomation-item"><a href="#">Contact Infomation </a></li>
+            <li class="infomation-item"><a href="#">Contact Infomation</a></li>
             <li class="infomation-item"><a href="#">Terms of membership</a></li>
             <li class="infomation-item"><a href="#">Payment methods</a></li>
             <li class="infomation-item"><a href="#">Recruitment</a></li>
