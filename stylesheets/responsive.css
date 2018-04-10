@@ -3,13 +3,61 @@
     padding: 0 15px;
   }
 
-  .main-nav,
-  .top-infor {
+  .main-menu,
+  .header-infor {
     display: none;
   }
 
   .btn-menu {
-    display: block ;
+    display: inline-block ;
+  }
+
+  .main-nav .main-menu,
+  .main-nav:active .main-menu {
+    display: none;
+    position: absolute;
+    padding: 20px 10px;
+    background-color: rgba(255, 168, 0, 0.9);
+    right: 10px;
+    top: 100px;
+    width: 35%;
+    -webkit-transition: all 0.3s ease-in-out;
+       -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+         -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+  }
+
+  .main-nav .menu .has-sub:hover:before, 
+  .main-nav .main-menu 
+  .menu-item a:hover, 
+  .main-nav .main-menu 
+  .menu-item.active:hover:after, 
+  .main-nav .main-menu 
+  .menu-item.active a:hover {
+    color: #fff;
+  }
+
+  .main-nav:hover .main-menu {
+    display: block;
+    z-index: 99990;
+    -webkit-transition: all 0.3s ease-in-out;
+       -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+         -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+  }
+
+  .main-nav .main-menu .menu-item {
+    text-align: left;
+    width: 100%;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(221, 221, 221, 0.6);
+    margin: 0;
+  }
+
+  .section-banner .banner-caption .banner-content {
+    left: 15%;
   }
 
   .section-destination {
@@ -40,7 +88,7 @@
     margin-bottom: 15px;
   }
 
-  .section-title.style-color {
+  .section-title.color-white {
     color: #000;
   }
 
@@ -61,6 +109,138 @@
     padding: 0 30px;
   }
 
+  .search-logo {
+    margin-right: 20px;
+  }
+
+  .search-group {
+    width: 77%;
+  }
+
+  .search-group .tabs-content input {
+    margin-right: 5px;
+  }
+
+  .search-group .tabs-content input[name="location"] {
+    width: 40%;
+  }
+
+  .search-group .tabs-content input[name="length"], 
+  .search-group .tabs-content input[name="price"] {
+    width: 17%;
+  }
+
+  .search-group .tabs-content .btn-search:before {
+    left: -15px;
+  }
+
+}
+
+@media only screen and (max-width: 991px) {
+  .search-logo {
+    margin-right: 20px;
+  }
+
+  .search-group {
+    width: 77%;
+  }
+
+  .search-group .tabs-content input {
+    margin-right: 5px;
+  }
+
+  .search-group .tabs-content input[name="location"] {
+    width: 40%;
+  }
+
+  .search-group .tabs-content input[name="length"], 
+  .search-group .tabs-content input[name="price"] {
+    width: 17%;
+  }
+
+  .search-group .tabs-content .btn-search:before {
+    left: -15px;
+  }
+
+  .section-padding {
+    padding: 30px 0;
+  }
+
+  .section-support-online .support-list .support-item {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+
+  .section-support-online .support-list .support-item:nth-child(2)::after {
+    background-color: transparent;
+  }
+
+  .section-support-online .support-list .support-item:nth-child(-n+2)::before {
+    position: absolute;
+    content: "";
+    width: 80%;
+    height: 1px;
+    left: 50%;
+    bottom: -15px;
+    margin-left: -40%;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 990x) {
+  .search-logo {
+    width: 100%;
+    margin: 0 0 20px 0;
+    padding-top: 0;
+  }
+
+  .search-group {
+    width: 100%;
+  } 
+
+  .search-group .tabs-content input[name="location"],
+  .search-group .tabs-content input[name="length"], 
+  .search-group .tabs-content input[name="price"],
+  .search-group .tabs-content .btn-search {
+    width: 48%;
+    float: left;
+    margin: 0 10px 20px 0;
+  }
+
+  .search-group .tabs-content .btn-search:before {
+    background-color: transparent;
+  }
+
+  .main-nav .main-menu, .main-nav:active .main-menu {
+    width: 40%;
+  }
+
+  .section-banner .banner-caption .banner-content {
+    left: 7%;
+    top: 30%;
+  }
+
+  .section-banner .banner-caption .banner-content .banner-title {
+    font-size: 40px;
+    list-style: 44px;
+  }
+
+  .section-banner .banner-caption .banner-content .banner-text {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .destination-content .destination-item {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+  .section-gird-tour,
+  .album-list .album-item {
+    width: 50%;
+    margin-bottom: 20px;
+  }
 }
 
 /* All Mobile Sizes */
@@ -71,7 +251,7 @@
   }
 
   .destination-content .destination-name {
-    padding: 15px 5px;
+    padding: 15px 10px;
   }
 
   .destination-content .destination-name .destination-title a {
@@ -82,12 +262,20 @@
     margin-right: 20px;
   }
 
+  .search-group {
+    width: 77%;
+  }
+
   .search-group .search-list label {
     padding: 15px 10px;
   }
 
   .search-group .tab-css-search .btn-search {
     padding: 0 17px;
+  }
+
+  .search-group .tab-link .tab-item {
+    padding: 15px 15px;
   }
 
   .search-group .tab-css-search input {
@@ -113,6 +301,7 @@
 
   .section-support-online .support-list {
     width: 100%;
+    padding: 35px 0 10px;
   }
 
   .section-support-online .support-list .support-item .support-title {
@@ -139,6 +328,74 @@
   }
 
   .section-gird-tour {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+  .main-nav .main-menu, .main-nav:active .main-menu {
+    width: 40%;
+  }
+
+  .section-banner .banner-caption .banner-content {
+    left: 11%;
+    top: 34%;
+  }
+
+  .section-banner .banner-caption .banner-content .banner-title {
+    font-size: 44px;
+    line-height: 48px;
+  }
+
+  .section-banner .banner-caption .banner-content .banner-text {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 766px) {
+  .search-logo {
+    width: 100%;
+    margin: 0 0 20px 0;
+    padding-top: 0;
+  }
+
+  .search-group {
+    width: 100%;
+  } 
+
+  .search-group .tabs-content input[name="location"],
+  .search-group .tabs-content input[name="length"], 
+  .search-group .tabs-content input[name="price"],
+  .search-group .tabs-content .btn-search {
+    width: 48%;
+    float: left;
+    margin: 0 10px 20px 0;
+  }
+
+  .search-group .tabs-content .btn-search:before {
+    background-color: transparent;
+  }
+
+  .main-nav .main-menu, .main-nav:active .main-menu {
+    width: 40%;
+  }
+
+  .section-banner .banner-caption .banner-content {
+    left: 15%;
+    top: 30%;
+  }
+
+  .section-banner .banner-caption .banner-content .banner-title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .section-banner .banner-caption .banner-content .banner-text {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .destination-content .destination-item {
     width: 50%;
     margin-bottom: 20px;
   }
@@ -171,22 +428,39 @@
   }
 
   .search-logo {
-    float: none;
+    width: 100%;
     margin: 0 0 20px 0;
     padding-top: 0;
   }
 
-  .search-group .tab-css-search input[name="location"],
-  .search-group .tab-css-search input[name="length"], 
-  .search-group .tab-css-search input[name="price"] {
+  .search-group .tabs-content input[name="location"],
+  .search-group .tabs-content input[name="length"], 
+  .search-group .tabs-content input[name="price"] {
     width: 100%;
+    margin-bottom: 15px;
   }
 
-  .search-group .tab-css-search::before {
+  .search-group .tabs-content {
+    padding-top: 30px;
+  }
+
+  .search-group {
+    width: 100%;
+  } 
+
+  .search-group .tab-link .tab-item {
+    font-size: 22px;
+  }
+
+  .search-group .tab-link .tab-item .sub-title {
+    font-size: 12px;
+  }
+
+  .search-group .tabs-content::before {
     background-color: transparent;
   }
 
-  .search-group .tab-css-search .btn-search {
+  .search-group .tabs-content .btn-search {
     margin-left: 0;
   }
 
@@ -253,9 +527,85 @@
     top: 35%;
   }
 
+  .section-banner .banner-caption .banner-content .banner-title {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 5px;
+  }
+
+  .section-banner .banner-caption .banner-content {
+    left: 5%;
+    top: 30%;
+  }
+
+  .section-banner .banner-caption .banner-content .banner-text {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .main-nav .main-menu, .main-nav:active .main-menu {
+    width: 45%;
+    padding: 5px 10px;
+  }
+
+  .main-nav .main-menu, .main-nav:active .main-menu {
+    right: 15px;
+    width: 94%;
+  }
+
+  .btn-menu {
+    right: 10px;
+  }
+
+  .footer-list .footer-item.footer-email {
+    margin-bottom: 0;
+  }
+
 }
 
 @media (max-width: 320px) {	
- 
+  .search-group .tab-link .tab-item {
+    width: 100%;
+    padding: 15px 15px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .section-banner .banner-caption .banner-content .banner-text {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 10px;
+  }
+
+  .section-banner .banner-caption .banner-content .banner-title {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 5px;
+  }
+
+  .section-banner .banner-caption .banner-content a {
+    padding: 3px 10px;
+  }
+
+  .section-banner .banner-caption .banner-content {
+    top: 25%;
+  }
+
+  .section-title {
+    font-size: 14px;
+  }
+
+  .footer-bottom {
+    display: inline-block;
+  }
+
+  .footer-bottom .bottom-webdesign {
+    display: block;
+    float: left;
+  }
+
+  .main-nav .main-menu, .main-nav:active .main-menu {
+    right: 15px;
+    width: 91%;
+  }
 }
 

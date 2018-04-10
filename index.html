@@ -4,11 +4,11 @@
   <title>Day 2</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+  <link rel="stylesheet" type="text/css" href="stylesheets/font-myri.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/font-utm.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css">
-  <link rel="stylesheet" type="text/css" href="stylesheets/font-myri.css">
-  <link rel="stylesheet" type="text/css" href="stylesheets/font-utm.css">
 </head>
 <body>
   <header class="page-header">
@@ -47,6 +47,9 @@
           </ul>
 
           <nav class="main-nav">
+            <div class="btn-menu">
+              <span></span>
+            </div>
             <ul class="main-menu"> 
               <li class="menu-item active"><a href="index.html">Home</a></li>
               <li class="menu-item"><a href="#">About Hadatour</a></li> 
@@ -136,43 +139,49 @@
       </div>
     </section>
 
-    <section class="section-padding section-search" style="background-image: url('images/banner.png'); background-size: cover;">
+    <section class="section-padding section-search" style="background-image: url('images/banner.png');">
       <div class="container">
         <div class="search-logo">
           <img src="images/logo1.png" alt="images">
         </div>
-        <div class="search-group">
-          <ul class="search-list tabs-list">
-            <li class="tabs-item">
-              <input type="radio" name="tabs" id="tab1" checked>
-              <label for="tab1">Search Tour
-                <p class="sub-title">let's choose a destination</p>
-              </label>
-              <div class="tabs-content">
+        <div class="search-group tabs">
+          <ul class="search-list tab-link">
+            <li class="tab-item">
+              <a href="">
+                <span class="tab-title">Search Tour</span>
+                <span class="sub-title">let's choose a destination</span>
+              </a>
+            </li>
+
+            <li class="tab-item">
+              <a href="">
+                <span class="tab-title">Search Hotel</span>
+                <span class="sub-title">Choose the hotel that fits your needs</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="tabs-content">
+            <ul class="tab-content-list">
+              <li class="content-item">
                 <form class="search-form">
                   <input type="text" name="location" placeholder="Name Tour">
                   <input type="text" name="length" placeholder="Time">
                   <input type="text" name="price" placeholder="Price">
                   <button class="btn-search" type="submit"><img src="images/icon11.png" alt="image">&nbsp;Search</button>
                 </form>
-              </div>
-            </li>
+              </li>
 
-            <li class="tabs-item">
-              <input id="tab2" type="radio" name="tabs">
-              <label for="tab2">Search Hotel
-                <p class="sub-title">Choose the hotel that fits your needs</p>
-              </label>
-              <div class="tabs-content">
+              <li class="content-item">
                 <form class="search-form">
                   <input type="text" name="location" placeholder="Location">
                   <input type="text" name="length" placeholder="Length">
                   <input type="text" name="price" placeholder="Price">
                   <button class="btn-search" type="submit"><img src="images/icon11.png" alt="image">&nbsp;Search</button>
                 </form>
-              </div>
-            </li>
-          </ul>
+                </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -426,7 +435,7 @@
       </div>
     </section>
 
-    <section class="section-activity-images section-padding ">
+    <section class="section-activity-images section-padding">
       <div class="container">
         <div class="activity-title top-title">
           <h2 class="section-title">activity images</h2>
@@ -493,11 +502,11 @@
   <footer class="page-footer">
     <div class="container">
       <ul class="footer-list">
-        <li class="footer-logo footer-item">
+        <li class="footer-item footer-logo">
           <a href="index.html"><img src="images/logo1.png" alt="image"></a>
         </li>
 
-        <li class="footer-infomation footer-item">
+        <li class="footer-item footer-infomation">
           <h4 class="footer-title">infomation</h4>
           <ul class="infomation-list">
             <li class="infomation-item"><a href="#">About HadaTour</a></li>
@@ -508,7 +517,7 @@
           </ul>
         </li>
 
-        <li class="footer-social footer-item">
+        <li class="footer-item footer-social">
           <h4 class="footer-title">social</h4>
           <ul class="social-list">
             <li class="social-item"><a href="#"><img src="images/icon6.png" alt="image"> Bacebook</a></li>
@@ -518,7 +527,7 @@
           </ul>
         </li>
 
-        <li class="footer-email footer-item">
+        <li class="footer-item footer-email">
           <p>Enter Email to get news from HadaTour</p>
           <form action="mail-notifications" class="form-footer">
             <input type="text" name="email" placeholder="Please enter email here">
@@ -528,14 +537,8 @@
       </ul>
 
       <div class="footer-bottom">
-        <ul class="bottom-list">
-          <li class="bottom-copyright bottom-item">
-            <p>&copy; 2018 - Copyright belong to HadaTour</p>
-          </li>
-          <li class="bottom-webdesign bottom-item">
-            <p>Design by <a href="#">hadatour.com</a></p>
-          </li>
-        </ul>
+        <span class="bottom-copyright">&copy; 2018 - Copyright belong to HadaTour</span>
+        <span class="bottom-webdesign">Design by <a href="#">hadatour.com</a></span>
       </div>
     </div>
   </footer>
