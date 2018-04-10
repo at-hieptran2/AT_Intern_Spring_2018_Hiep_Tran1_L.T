@@ -56,10 +56,6 @@
     margin: 0;
   }
 
-  .section-banner .banner-caption .banner-content {
-    left: 15%;
-  }
-
   .section-destination {
     margin-top: 0;
   }
@@ -163,7 +159,7 @@
   }
 
   .section-padding {
-    padding: 30px 0;
+    padding: 40px 0;
   }
 
   .section-support-online .support-list .support-item {
@@ -203,9 +199,9 @@
   .search-group .tabs-content input[name="length"], 
   .search-group .tabs-content input[name="price"],
   .search-group .tabs-content .btn-search {
-    width: 48%;
+    width: 49%;
     float: left;
-    margin: 0 10px 20px 0;
+    margin: 0 5px 20px 0;
   }
 
   .search-group .tabs-content .btn-search:before {
@@ -216,17 +212,12 @@
     width: 40%;
   }
 
-  .section-banner .banner-caption .banner-content {
-    left: 7%;
-    top: 30%;
-  }
-
-  .section-banner .banner-caption .banner-content .banner-title {
+  .section-banner .banner-caption .banner-title {
     font-size: 40px;
     list-style: 44px;
   }
 
-  .section-banner .banner-caption .banner-content .banner-text {
+  .section-banner .banner-caption .banner-text {
     font-size: 16px;
     margin-bottom: 30px;
   }
@@ -240,6 +231,10 @@
   .album-list .album-item {
     width: 50%;
     margin-bottom: 20px;
+  }
+
+  .search-group .tab-link .tab-item {
+    width: 50%;
   }
 }
 
@@ -263,15 +258,27 @@
   }
 
   .search-group {
-    width: 77%;
+    width: 100%;
+  }
+
+  .search-group .tabs-content input[name="location"], 
+  .search-group .tabs-content input[name="length"], 
+  .search-group .tabs-content input[name="price"], 
+  .search-group .tabs-content .btn-search {
+    width: 49%;
+    margin: 0 5px 20px 0;
+  }
+
+  .search-group .tabs-content {
+    padding-top: 35px;
   }
 
   .search-group .search-list label {
     padding: 15px 10px;
   }
 
-  .search-group .tab-css-search .btn-search {
-    padding: 0 17px;
+  .search-group .tabs-content .btn-search::before {
+    background-color: transparent;
   }
 
   .search-group .tab-link .tab-item {
@@ -282,17 +289,8 @@
     margin-right: 5px;
   }
 
-  .search-group .tab-css-search input[name="location"] {
-    width: 38%;
-  }
-
   .search-group .tab-css-search .btn-search {
     margin-left: 0;
-  }
-
-  .search-group .tab-css-search input[name="length"], 
-  .search-group .tab-css-search input[name="price"] {
-    width: 18%;
   }
 
   .search-group .tab-css-search input[type="text"] {
@@ -328,7 +326,7 @@
   }
 
   .section-gird-tour {
-    width: 50%;
+    width: 100%;
     margin-bottom: 20px;
   }
 
@@ -336,19 +334,25 @@
     width: 40%;
   }
 
-  .section-banner .banner-caption .banner-content {
-    left: 11%;
-    top: 34%;
-  }
-
-  .section-banner .banner-caption .banner-content .banner-title {
+  .section-banner .banner-caption .banner-title {
     font-size: 44px;
     line-height: 48px;
   }
 
-  .section-banner .banner-caption .banner-content .banner-text {
+  .section-banner .banner-caption .banner-text {
     font-size: 16px;
     margin-bottom: 30px;
+  }
+
+  .search-logo {
+    width: 100%;
+    margin: 0 0 20px 0;
+    padding-top: 0;
+  }
+
+  .destination-content .destination-item {
+    width: 50%;
+    margin-bottom: 20px;
   }
 }
 
@@ -367,9 +371,9 @@
   .search-group .tabs-content input[name="length"], 
   .search-group .tabs-content input[name="price"],
   .search-group .tabs-content .btn-search {
-    width: 48%;
+    width: 100%;
     float: left;
-    margin: 0 10px 20px 0;
+    margin-bottom: 20px;
   }
 
   .search-group .tabs-content .btn-search:before {
@@ -380,17 +384,12 @@
     width: 40%;
   }
 
-  .section-banner .banner-caption .banner-content {
-    left: 15%;
-    top: 30%;
-  }
-
-  .section-banner .banner-caption .banner-content .banner-title {
+  .section-banner .banner-caption .banner-title {
     font-size: 40px;
     line-height: 48px;
   }
 
-  .section-banner .banner-caption .banner-content .banner-text {
+  .section-banner .banner-caption .banner-text {
     font-size: 16px;
     margin-bottom: 30px;
   }
@@ -398,6 +397,10 @@
   .destination-content .destination-item {
     width: 50%;
     margin-bottom: 20px;
+  }
+
+  .search-group .tab-link .tab-item {
+    width: 100%;
   }
 }
 
@@ -410,11 +413,11 @@
     text-transform: uppercase;
     font-weight: 600;
     color: #000000;
-    margin-right: 5px;
+    margin-right: 10px;
   }
 
   .top-title a {
-    padding: 5px 10px;
+    padding: 10px 15px;
   }
 
   .destination-content .destination-item {
@@ -450,6 +453,7 @@
 
   .search-group .tab-link .tab-item {
     font-size: 22px;
+    width: 100%;
   }
 
   .search-group .tab-link .tab-item .sub-title {
@@ -462,6 +466,7 @@
 
   .search-group .tabs-content .btn-search {
     margin-left: 0;
+    width: 100%;
   }
 
   .search-group .search-list label {
@@ -527,18 +532,13 @@
     top: 35%;
   }
 
-  .section-banner .banner-caption .banner-content .banner-title {
+  .section-banner .banner-caption .banner-title {
     font-size: 30px;
     line-height: 36px;
     margin-bottom: 5px;
   }
 
-  .section-banner .banner-caption .banner-content {
-    left: 5%;
-    top: 30%;
-  }
-
-  .section-banner .banner-caption .banner-content .banner-text {
+  .section-banner .banner-caption .banner-text {
     font-size: 12px;
     margin-bottom: 10px;
   }
@@ -561,6 +561,22 @@
     margin-bottom: 0;
   }
 
+  .footer-bottom span {
+    text-align: center;
+    display: block;
+    float: none;
+  }
+
+  .footer-bottom span.bottom-webdesign {
+    float: none;
+  }
+
+  .section-banner .banner-caption a {
+    padding: 5px 10px;
+    font-size: 14px;
+    margin: 0 5px;
+  }
+
 }
 
 @media (max-width: 320px) {	
@@ -570,37 +586,26 @@
     border-bottom: 1px solid #ddd;
   }
 
-  .section-banner .banner-caption .banner-content .banner-text {
+  .section-banner .banner-caption .banner-text {
     font-size: 12px;
     line-height: 16px;
     margin-bottom: 10px;
   }
 
-  .section-banner .banner-caption .banner-content .banner-title {
+  .section-banner .banner-caption .banner-title {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 5px;
   }
 
-  .section-banner .banner-caption .banner-content a {
+  .section-banner .banner-caption a {
     padding: 3px 10px;
-  }
-
-  .section-banner .banner-caption .banner-content {
-    top: 25%;
+    font-size: 12px;
+    margin: 0 5px;
   }
 
   .section-title {
     font-size: 14px;
-  }
-
-  .footer-bottom {
-    display: inline-block;
-  }
-
-  .footer-bottom .bottom-webdesign {
-    display: block;
-    float: left;
   }
 
   .main-nav .main-menu, .main-nav:active .main-menu {
