@@ -1,0 +1,40 @@
+.container {
+  max-width: 1200px;
+  width: $width-all;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.destination-content .destination-item {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+.support-item {
+  position: relative;
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+
+.album-item {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+.footer-list .footer-item {
+  float: left;
+  width: 25%;
+}
+
+.footer-list .footer-item.footer-infomation,
+.footer-list .footer-item.footer-social {
+  width: 20%;
+}
+
+.footer-list .footer-item.footer-email {
+  width: 35%;
+}

@@ -1,0 +1,151 @@
+.header-infor {
+  padding-top: 10px;
+  .custommer-infor {
+    display: inline-block;
+    margin-left: 20px;
+    .infor-item {
+      float: left;
+      display: inline-block;
+      text-align: left;
+      padding-right: 10px;
+      a {
+        color: $main-color;
+        font-weight: 600;
+      }
+    }
+    .infor-item:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
+.page-title.feature-post {
+  padding: $padding-zero;
+  iframe {
+    width: $width-all;
+  }
+}
+
+.page-header {
+  @extend %time-transition;
+  background-color: $bg-color;
+  margin: 0;
+  border-bottom: none;
+  padding: 0;
+  z-index: 9999;
+  width: $width-all;
+  .header-logo,.header-nav {
+    display: inline-block;
+  }
+}
+
+.header-nav {
+  text-align: right;
+  float: right;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.main-nav .main-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  .menu-item {
+    position: relative;
+    display: inline-block; 
+    padding: 0 6px;
+    a {
+      @extend %time-transition;
+      font-family: $font-title;
+      position: relative;
+      display: block;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: $color-a;
+      margin: 0 15px;
+    }
+  }
+  a:hover {
+    color: $main-color;
+  }
+  .menu-item:last-child {
+    padding-right: 0;
+  }
+
+  .menu-item:last-child a {
+    margin-right: 0;
+  }
+}
+
+.page-header .header-logo {
+  @extend %time-transition;
+  line-height: 100px;
+}
+
+.btn-menu {
+  @include transition(all ease .238s);
+  display: none;
+  position: relative;
+  background: transparent;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  float: left;
+  right: 40px;
+  top: 35px;  
+  padding: 0;
+  border: none;
+}
+
+.btn-menu:hover span {
+  display: none;
+}
+
+.btn-menu:hover::before {
+  @include transform (rotate3d(0, 0, 1, -45deg));
+}
+
+.btn-menu:hover::after {
+  @include transform (rotate3d(0, 0, 1, 45deg));
+  width: 30px;
+}
+
+.btn-menu span {
+  @include transition(all ease .238s);
+  background-color: $main-color;
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  right: 0;
+  top: 50%;
+  overflow: hidden;
+  text-indent: 200%;
+}
+
+.btn-menu::before,
+.btn-menu::after {
+  @include transform-origin(50% 50%);
+  @include transition(all ease .238s);
+  background-color: $main-color;
+  position: absolute;
+  top: 0;
+  right: 0;
+  top: 50%;
+  content: '';
+  height: 2px;
+  width: 30px;  
+}
+
+.btn-menu:before {
+  @include transform(translate3d(0, -9px, 0));
+}
+
+.btn-menu::after {
+  @include transform(translate3d(0, 9px, 0));
+  width: 25px;
+}
+
+
+
