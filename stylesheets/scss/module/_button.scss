@@ -1,0 +1,19 @@
+button {
+  font-size: 14px;
+  font-weight: 400;   
+  color: #d7d7d7;
+  background-color: transparent;
+  border: 1px solid #d7d7d7;
+  text-transform: uppercase;   
+  padding: 10px;
+  /*letter-spacing: 2.8px;*/
+  -webkit-transition: all 0.3s ease 0s;
+     -moz-transition: all 0.3s ease 0s;
+      -ms-transition: all 0.3s ease 0s;
+       -o-transition: all 0.3s ease 0s;
+          transition: all 0.3s ease 0s;
+}
+
+button {
+  border: none;
+}

@@ -21,7 +21,7 @@
   .infomation-list .infomation-item a {
     color: #282828;
     line-height: 24px;
-    a:hover {
+    &:hover {
       color: $main-color;
     }
   }
@@ -64,7 +64,7 @@
   border-radius: 5px;
   text-align: center;
   line-height: 52px;
-  :hover {
+  &:hover {
     background-color: $main-color;
   }
 }
@@ -80,10 +80,48 @@
   .bottom-webdesign {
     float: right;
     a {
-      color: $color-a;
+      color: #30b549;
+      &:hover {
+        color: $main-color;
+      }
     }
-    a:hover {
-      color: $main-color;
-    }
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .footer-list .footer-item,
+  .footer-list .footer-item.footer-infomation, 
+  .footer-list .footer-item.footer-social,
+  .footer-list .footer-item.footer-email {
+    width: $width-all;
+    margin-bottom: 20px;
+  }
+
+  .footer-list .footer-item.footer-email {
+    padding-top: 0;
+  }
+
+  .footer-bottom ul li.bottom-webdesign {
+    float: none;
+  }
+
+  .footer-list .footer-item.footer-email {
+    margin-bottom: 0;
+  }
+
+  .footer-bottom span {
+    text-align: center;
+    display: block;
+    float: none;
+  }
+
+  .footer-bottom span.bottom-webdesign {
+    float: none;
+  }
+}
+
+@media (max-width: 479px) {
+  .btn-menu {
+    right: 10px;
   }
 }

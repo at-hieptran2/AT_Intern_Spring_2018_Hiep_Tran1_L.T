@@ -1,5 +1,6 @@
 .header-infor {
-  padding-top: 10px;
+  padding-top: 15px;
+  margin-bottom: 10px;
   .custommer-infor {
     display: inline-block;
     margin-left: 20px;
@@ -8,13 +9,16 @@
       display: inline-block;
       text-align: left;
       padding-right: 10px;
+      p {
+        line-height: 14px;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
       a {
         color: $main-color;
         font-weight: 600;
       }
-    }
-    .infor-item:last-child {
-      padding-right: 0;
     }
   }
 }
@@ -56,6 +60,12 @@ input[type="checkbox"] {
     position: relative;
     display: inline-block; 
     padding: 0 6px;
+    &:last-child {
+      padding-right: 0;
+    }
+    &:last-child a {
+      margin-right: 0;
+    }
     a {
       @extend %time-transition;
       font-family: $font-title;
@@ -65,23 +75,16 @@ input[type="checkbox"] {
       font-weight: 600;
       color: $color-a;
       margin: 0 15px;
+      &:hover {
+        color: $main-color;
+      }
     }
-  }
-  a:hover {
-    color: $main-color;
-  }
-  .menu-item:last-child {
-    padding-right: 0;
-  }
-
-  .menu-item:last-child a {
-    margin-right: 0;
   }
 }
 
 .page-header .header-logo {
   @extend %time-transition;
-  line-height: 100px;
+  line-height: 110px;
 }
 
 .btn-menu {
@@ -97,54 +100,144 @@ input[type="checkbox"] {
   top: 35px;  
   padding: 0;
   border: none;
+  &::before,
+  &::after {
+    @include transform-origin(50% 50%);
+    @include transition(all ease .238s);
+    background-color: $main-color;
+    position: absolute;
+    top: 0;
+    right: 0;
+    top: 50%;
+    content: '';
+    height: 2px;
+    width: 30px;  
+  }
+  &::before {
+    @include transform(translate3d(0, -9px, 0));
+  }
+  &::after {
+    @include transform(translate3d(0, 9px, 0));
+    width: 25px;
+  }
+  &:hover span {
+    display: none;
+  }
+  &:hover::before {
+    @include transform (rotate3d(0, 0, 1, -45deg));
+  }
+  &:hover::after {
+    @include transform (rotate3d(0, 0, 1, 45deg));
+    width: 30px;
+  }
+  span {
+    @include transition(all ease .238s);
+    background-color: $main-color;
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    right: 0;
+    top: 50%;
+    overflow: hidden;
+    text-indent: 200%;
+  }
 }
 
-.btn-menu:hover span {
-  display: none;
+@media only screen and (max-width: 991px) {
+  .header-infor {
+    display: none;
+  }
+
+  .main-nav {
+    display: block;
+    position: relative;
+    top: 40px;
+    right: 25px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+    input {
+      display: block;
+      width: 40px;
+      height: 32px;
+      position: absolute;
+      top: -7px;
+      left: -5px;
+      cursor: pointer;
+      opacity: 0;
+      z-index: 2;
+      -webkit-touch-callout: none;
+      &:checked ~ span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: #232323;
+      }
+      &:checked ~ span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+      }
+      &:checked ~ span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(0, -1px);
+      }
+    }
+    span {
+      display: block;
+      width: 33px;
+      height: 4px;
+      margin-bottom: 5px;
+      position: relative;
+      background: $main-color;
+      border-radius: 3px;
+      z-index: 1;
+      transform-origin: 4px 0px;
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+        background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+        opacity 0.55s ease;
+      &:last-child {
+        transform-origin: 0% 0%;
+      }
+      &:nth-last-child(2) {
+        transform-origin: 0% 100%;
+      }
+    }
+    .main-menu {
+      position: absolute;
+      top: 0;
+      right: -40px;
+      width: 300px;
+      margin: -100px 0 0 -300px;
+      padding: 50px;
+      padding-top: 140px;
+      background: $main-color;
+      list-style-type: none;
+      -webkit-font-smoothing: antialiased;
+      transform-origin: 0% 0%;
+      transform: translate(0, -100%);
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+      .menu-item {
+        display: block;
+        padding: 5px 0;
+        font-size: 16px;
+        a {
+          margin: 0;
+          text-align: left;
+          &:hover {
+            color: $color-a-second;
+          }
+        }
+      }
+    }
+    input:checked ~ .main-menu {
+      right: -40px;
+      transform: none;
+    }
+  }
 }
 
-.btn-menu:hover::before {
-  @include transform (rotate3d(0, 0, 1, -45deg));
-}
-
-.btn-menu:hover::after {
-  @include transform (rotate3d(0, 0, 1, 45deg));
-  width: 30px;
-}
-
-.btn-menu span {
-  @include transition(all ease .238s);
-  background-color: $main-color;
-  position: absolute;
-  width: 20px;
-  height: 2px;
-  right: 0;
-  top: 50%;
-  overflow: hidden;
-  text-indent: 200%;
-}
-
-.btn-menu::before,
-.btn-menu::after {
-  @include transform-origin(50% 50%);
-  @include transition(all ease .238s);
-  background-color: $main-color;
-  position: absolute;
-  top: 0;
-  right: 0;
-  top: 50%;
-  content: '';
-  height: 2px;
-  width: 30px;  
-}
-
-.btn-menu:before {
-  @include transform(translate3d(0, -9px, 0));
-}
-
-.btn-menu::after {
-  @include transform(translate3d(0, 9px, 0));
-  width: 25px;
+@media (max-width: 320px) {	
+  .main-nav .main-menu {
+    width: 320px;
+  }
 }
 
 
