@@ -86,7 +86,7 @@ exercise3('1*9');
 4. A masked number is a string that consists of digits and one asterisk (*) that should be replaced by exactly one digit. Given a masked number find all the possible options to replace the asterisk with a digit to produce an integer divisible by 6.
 
 ```javascript
-function exercise3(num) {
+function exercise4(num) {
   let arr = [];
   let numInt = "";
   for(let i = 0; i <= 9; i++) 
@@ -98,6 +98,6 @@ function exercise3(num) {
   }
   return(arr);
 }
-exercise3('1*9');
-exercise3('1234567890*');
+exercise4('1*9');
+exercise4('1234567890*');
 ```
