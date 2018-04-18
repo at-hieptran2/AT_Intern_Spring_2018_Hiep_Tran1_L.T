@@ -53,10 +53,11 @@ function sumintegers(a,b) {
 
 ```javascript
 function absolutenum(j) {
-  if (j > 19) {
-    return 3 * (j - 19);
+  let a = 19;
+  if (j > a) {
+    return 3 * (j - a);
   } else {
-    return 19 - j;
+    return a - j;
   }
 }
 ```
