@@ -1,0 +1,126 @@
+/* tabs search
+-------------------------------------------------------------- */
+.section-search {
+  background-size: cover;
+}
+
+.search-logo {
+  float: left;
+  width: 20%;
+	padding-top: 50px;
+}
+
+.search-group {
+  display: inline-block;
+  width: 80%;
+}
+
+.search-group .tab-link .tab-item {
+  float: left;
+  font-family: $font-title;
+	display: inline-block;
+  margin: 0 0 -1px;
+	text-align: left;
+	text-transform: uppercase;
+  color: $color-title;
+	border-radius: 5px 5px 0 0;
+  z-index: 99;
+  position: relative;
+  border: 1px $boder-third;
+  border-bottom: 1px $boder-first;
+  text-align: left;
+  a {
+    display: inline-block;
+    padding: 20px 35px;
+  }
+  &:nth-child(2) {
+    border: 1px solid transparent;
+  }
+  .tab-title {
+    font-size: 26px;
+    line-height: 28px;
+    display: block;
+  }
+  .sub-title {
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 8px;
+    color: #737373;
+  }
+}
+
+.search-group .tabs-content .tab-content-list .content-item:last-child {
+  display: none;
+}
+
+.search-group .tabs-content {
+  padding-top: 50px;
+  display: inline-block;
+  width: 100%;
+  border-top: 1px $boder-third;
+  .btn-search {
+    @include transition(all 0.3s ease-in-out);
+    position: relative;
+    height: 40px;
+    border-radius: 20px;
+    background-color: $bg-third;
+    border-color: $bg-third;
+    color: $color-a-second;
+    padding: 0 40px;
+    text-transform: none;
+    margin-left: 20px;
+    &:hover {
+      @include transition(all 0.3s ease-in-out);
+      background-color: $main-color;
+      border-color: $main-color;
+    }
+    &:before {
+      position: absolute;
+      top: 2px;
+      left: -20px;
+      content: "";
+      width: 1px;
+      height: 30px;
+      background-color: #e3e3e3;
+    }
+  }
+  input {
+    border-radius: 20px;
+    display: inline;
+    margin-right: 15px;
+    margin-bottom: 0;
+  }
+  input[name="location"] {
+    width: 44%;
+  }
+  input[name="length"],
+  input[name="price"] {
+    width: 16%;
+  }
+  .btn-search {
+    @include transition(all 0.3s ease-in-out);
+    position: relative;
+    height: 40px;
+    border-radius: 20px;
+    background-color: $color-a-third;
+    border-color: $color-a-third;
+    color: $color-a-second;
+    padding: 0 40px;
+    text-transform: none;
+    margin-left: 20px;
+    &:hover {
+      @include transition(all 0.3s ease-in-out);
+      background-color: $main-color;
+      border-color: $main-color;
+    }
+    &:before {
+      position: absolute;
+      top: 2px;
+      left: -20px;
+      content: "";
+      width: 1px;
+      height: 30px;
+      background-color: #e3e3e3;
+    }
+  }
+}
