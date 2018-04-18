@@ -88,12 +88,11 @@ function exercise4(num) {
   for(let i = 0; i <= 9; i++) 
   {
     numInt =  num.replace("*", i);
-    if(numInt % 6 === 0) {
+    if(numInt % 3 === 0 && numInt % 2 === 0) {
       arr.push(numInt);
     }
   }
   return(arr);
 }
-exercise4('1*9');
 exercise4('1234567890*');
 ```
