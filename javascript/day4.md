@@ -14,7 +14,6 @@
       var b = 5;
       This value will return true because the two values match.
 
-
 - The operator "===": Compare the values that are equal and compare the data type of the variable. If both conditions are not satisfied, the result is false.
   ex: var a = "5";
       var b = 5;
@@ -37,17 +36,14 @@ const:
   - If not declared, it will be error,
   - can not change the value,
 
-
-
 // Playground
-
 1. Write a JavaScript program to compute the sum of the two given integers. If the two values are same, then returns triple their sum.
 
 ```javascript
 function sumintegers(a,b) {
-  if (a==b) {
-    return 3*(a+b);
-  }else {
+  if (a == b) {
+    return 3 * (a + b);
+  } else {
     return a + b;
   }
 }
@@ -56,10 +52,10 @@ function sumintegers(a,b) {
 2. Write a JavaScript program to compute the absolute difference between a specified number and 19. Returns triple their absolute difference if the specified number is greater than 19.
 
 ```javascript
-function absolutenum (j) {
+function absolutenum(j) {
   if (j > 19) {
-    return 3*(j -19);
-  }else {
+    return 3 * (j - 19);
+  } else {
     return 19 - j;
   }
 }
@@ -74,7 +70,7 @@ function exercise3(num) {
   for(let i = 0; i <= 9; i++) 
   {
     numInt =  num.replace("*", i);
-    if(numInt% 3 === 0) {
+    if(numInt % 3 === 0) {
       arr.push(numInt);
     }
   }
@@ -92,7 +88,7 @@ function exercise4(num) {
   for(let i = 0; i <= 9; i++) 
   {
     numInt =  num.replace("*", i);
-    if(numInt% 6 === 0) {
+    if(numInt % 6 === 0) {
       arr.push(numInt);
     }
   }
