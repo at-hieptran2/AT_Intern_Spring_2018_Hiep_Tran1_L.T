@@ -142,14 +142,14 @@ button:hover {
   border-radius: 50%;
 }
 
+.bg-shopping {
+  min-height: 480px;
+}
+
 .all-product,
 .cart-shopping {
   padding: 80px 0;
   display: inline-block;
-}
-
-.cart-shopping {
-  padding-bottom: 150px;
 }
 
 .cart-shopping,
@@ -265,12 +265,6 @@ button:hover {
   cursor: pointer;
   background-color: #ff8400;
   border: 2px solid #ff8400;
-}
-
-.page-footer.footer-fix {
-  position: fixed;
-  bottom: 0;
-  width: 100%; 
 }
 
 .footer-bottom {
