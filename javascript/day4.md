@@ -40,8 +40,8 @@ const:
 1. Write a JavaScript program to compute the sum of the two given integers. If the two values are same, then returns triple their sum.
 
 ```javascript
-function sumintegers(a,b) {
-  if (a == b) {
+function sumIntegers(a,b) {
+  if (a === b) {
     return 3 * (a + b);
   } else {
     return a + b;
@@ -52,8 +52,8 @@ function sumintegers(a,b) {
 2. Write a JavaScript program to compute the absolute difference between a specified number and 19. Returns triple their absolute difference if the specified number is greater than 19.
 
 ```javascript
-function absolutenum(j) {
-  let a = 19;
+function absoluteNum(j) {
+  const a = 19;
   if (j > a) {
     return 3 * (j - a);
   } else {
@@ -67,15 +67,14 @@ function absolutenum(j) {
 ```javascript
 function exercise3(num) {
   let arr = [];
-  let numInt = "";
-  for(let i = 0; i <= 9; i++) 
-  {
-    numInt =  num.replace("*", i);
-    if(numInt % 3 === 0) {
+  let numInt = '';
+  for (let i = 0; i <= 9; i++) {
+    numInt = num.replace('', i);
+    if (numInt % 3 === 0) {
       arr.push(numInt);
     }
   }
-  return(arr);
+  return arr;
 }
 exercise3('1*9');
 ```
@@ -85,15 +84,14 @@ exercise3('1*9');
 ```javascript
 function exercise4(num) {
   let arr = [];
-  let numInt = "";
-  for(let i = 0; i <= 9; i++) 
-  {
-    numInt =  num.replace("*", i);
-    if(numInt % 3 === 0 && numInt % 2 === 0) {
+  let numInt = '';
+  for (let i = 0; i <= 9; i++) {
+    numInt = num.replace('*', i);
+    if (numInt % 3 === 0 && numInt % 2 === 0) {
       arr.push(numInt);
     }
   }
-  return(arr);
+  return arr;
 }
 exercise4('1234567890*');
 ```

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Shopping</title>
+
+  <link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/shopping.css">
+</head>
+<body onload="onloadProduct()">
+  <header class="page-header">
+    <div class="container clearfix">
+      <div class="header-wrap">
+        <div class="header-logo">
+          <a href="product.html" rel="home">
+            <img src="../images/logo2.png" alt="image">
+          </a>
+        </div>
+
+        <div class="header-nav">
+          <div class="icon-shop">
+            <a href="cart.html"><img src="../images/shopping.png"></a>
+            <p id="icon-shopping">0</p>
+          </div>
+          <nav class="main-nav">
+            <input type="checkbox"/>
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul class="main-menu" id="main-menu"> 
+              <!-- <li class="menu-item active"><a href="product.html">Home</a></li>
+              <li class="menu-item"><a href="#">About Hadatour</a></li> 
+              <li class="menu-item"><a href="#">Tour</a></li>                               
+              <li class="menu-item"><a href="#">Hotel</a></li>  
+              <li class="menu-item"><a href="#">Rental vehicles</a></li>
+              <li class="menu-item"><a href="#">Air ticket</a></li>
+              <li class="menu-item"><a href="#">News</a></li>
+              <li class="menu-item"><a href="#">Contact</a></li> -->
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-main bg-shopping">
+    <div class="container">
+      <div class="all-product">
+        <ul id="product-list">
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <span class="bottom-copyright">&copy; 2018 - Copyright belong to HadaTour</span>
+        <span class="bottom-webdesign">Design by <a href="#">hadatour.com</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="../javascript/product.js"></script>
+</body>
+</html>
