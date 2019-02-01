@@ -1,0 +1,127 @@
+/* footer
+-------------------------------------------------------------- */
+.page-footer {
+  background-color: $bg-color;
+  padding-top: 25px;
+}
+
+.footer-list {
+  display: inline-block;
+  width: 100%;
+}
+
+.footer-list .footer-item {
+  position: relative;
+  .footer-title {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #282828;
+    margin-bottom: 5px;
+  }
+  .infomation-list .infomation-item a {
+    color: #282828;
+    line-height: 24px;
+    &:hover {
+      color: $main-color;
+    }
+  }
+}
+
+.footer-list .footer-social .social-list .social-item {
+  margin-bottom: 5px;
+}
+
+.footer-list .footer-social img {
+  margin-right: 5px;
+}
+
+.footer-list .footer-item.footer-email {
+  padding-top: 30px;
+}
+
+.footer-list .footer-item.footer-email p {
+  margin-bottom: 20px;
+}
+
+.footer-list .footer-email .form-footer {
+  position: relative;
+}
+
+.footer-list .footer-email input[type="text"] {
+  height: 52px;
+  line-height: 52px;
+  border-radius: 5px;
+}
+
+.footer-list .footer-email a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  width: 88px;
+  height: 52px;
+  background-color: $bg-third;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 52px;
+  &:hover {
+    background-color: $main-color;
+  }
+}
+
+.form-footer input::-webkit-input-placeholder{
+  font-style: italic
+ }
+
+/* footer-bottom
+-------------------------------------------------------------- */
+.footer-bottom {
+  padding: 15px 0;
+  .bottom-webdesign {
+    float: right;
+    a {
+      color: #30b549;
+      &:hover {
+        color: $main-color;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .footer-list .footer-item,
+  .footer-list .footer-item.footer-infomation, 
+  .footer-list .footer-item.footer-social,
+  .footer-list .footer-item.footer-email {
+    width: $width-all;
+    margin-bottom: 20px;
+  }
+
+  .footer-list .footer-item.footer-email {
+    padding-top: 0;
+  }
+
+  .footer-bottom ul li.bottom-webdesign {
+    float: none;
+  }
+
+  .footer-list .footer-item.footer-email {
+    margin-bottom: 0;
+  }
+
+  .footer-bottom span {
+    text-align: center;
+    display: block;
+    float: none;
+  }
+
+  .footer-bottom span.bottom-webdesign {
+    float: none;
+  }
+}
+
+@media (max-width: 479px) {
+  .btn-menu {
+    right: 10px;
+  }
+}
